@@ -28,12 +28,16 @@ const showWinner=(userWin,userChoice,compChoice)=>{
         console.log('User Win');
         msg.innerText=`You Win!Your ${userChoice} beats ${compChoice}`;
         uscorepara.innerText=userScore;
+        msg.style.backgroundColor = "rgba(0, 255, 0, 0.2)"; // Green
+
     }
     else{
         compScore++;
         console.log('User Lose');
         msg.innerText=`You Lose.${compChoice} beats your ${userChoice}`;
         cscorepara.innerText=compScore;
+        msg.style.backgroundColor = "rgba(240, 0, 0, 0.85)"; // Red
+
     }    
 };
 const playGame = (userChoice) => {
